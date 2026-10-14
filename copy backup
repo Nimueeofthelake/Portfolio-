@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Me - Alina</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+            color: #2d2a3d;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2d1b4e;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #c9a7ff;
+        }
+
+        /* Hero */
+        header {
+            background: linear-gradient(135deg, #5b3b95, #8b6bc9);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        header h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: white;
+            color: #5b3b95;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .hero-button:hover {
+            background: #eee7ff;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(60, 40, 100, 0.08);
+        }
+
+        section h2 {
+            color: #5b3b95;
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+
+        section p {
+            font-size: 17px;
+        }
+
+        /* About Me cards */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #f3efff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .info-card h3 {
+            color: #5b3b95;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d1b4e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">Alina</div>
+
+    <div>
+        <a href="#about">All About Me</a>
+        <a href="#history">History of AI &amp; ML</a>
+        <a href="#ethics">Ethics &amp; Society</a>
+        <a href="#search">Search &amp; Adversarial Reasoning</a>
+        <a href="#machine-learning">Machine Learning Approaches</a>
+        <a href="#generative-ai">Generative AI &amp; LLMs</a>
+        <a href="#credits">Credits</a>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <header>
+        <h1>All About Me</h1>
+        <p>Artificial Intelligence & Machine Learning Student</p>
+
+        <a href="#about" class="hero-button">Get to Know Me</a>
+    </header>
+
+
+    <main>
+
+
+
+<!-- About -->
+<section id="about">
+    <h2>Hello!</h2>
+
+    <p>
+        Hello! My name is Alina. I am a freshman majoring in AI &amp; Machine
+        Learning. I am taking this course because AI is a new technology, and
+        it makes me excited to see what it can be turned into in the future.
+        I eventually want to become a researcher and help develop AI into a
+        more productive tool. From this course, I hope to get a deeper
+        understanding of AI and how it can be expanded upon.
+    </p>
+
+    <p>
+        In some instances, AI has become a tool. In my daily life, I often have
+        written portions for my assignments. I use the Gemini feature on Google
+        Docs to correct my spelling and grammar. Something concerning I find
+        about AI is the environmental impact it has on the environment. The
+        course objective I am most interested in studying is the ethics of AI.
+        This personally matters to me because I believe technology should not
+        just be useful but also ethical so that it can be the most productive
+        tool. Outside of class, I often enjoy playing my violin and doodling.
+        I have been playing the violin since 4th grade and have been in
+        orchestra for just as long. Now I just play for fun.
+    </p>
+</section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alina | All About Me</p>
+    </footer>
+
+</body>
+</html>
+
+
+<section id="course-objectives" style="
+    padding: 60px 40px;
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    box-sizing: border-box;
+">
+
+    <h2 style="
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 10px;
+    ">
+        Course Objectives
+    </h2>
+
+    <p style="
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #666666;
+    ">
+        Topics I will explore throughout this course.
+    </p>
+
+    <div style="
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 40px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+    ">
+        <h3 style="
+            font-size: 28px;
+            margin: 0;
+        ">
+            Coming Soon!
+        </h3>
+    </div>
+
+    <!-- Objective 01 -->
+    <div id="history" style="
+        margin-bottom: 30px;
+        padding: 25px;
+        border-left: 5px solid #333333;
+        scroll-margin-top: 100px;
+    ">
+        <h3 style="font-size: 24px; margin-bottom: 10px;">
+            01 — History of AI &amp; ML
+        </h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            Coming Soon!
+            Explain key moments in the historical development of AI and ML
+            and relate them to modern AI systems.
+        </p>
+    </div>
+
+    <!-- Objective 02 -->
+    <div id="ethics" style="
+        margin-bottom: 30px;
+        padding: 25px;
+        border-left: 5px solid #333333;
+        scroll-margin-top: 100px;
+    ">
+        <h3 style="font-size: 24px; margin-bottom: 10px;">
+            02 — Ethics &amp; Society
+        </h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            Coming Soon!
+            Identify and discuss ethical issues associated with AI and ML
+            and their societal implications.
+        </p>
+    </div>
+
+    <!-- Objective 03 -->
+    <div id="search" style="
+        margin-bottom: 30px;
+        padding: 25px;
+        border-left: 5px solid #333333;
+        scroll-margin-top: 100px;
+    ">
+        <h3 style="font-size: 24px; margin-bottom: 10px;">
+            03 — Search &amp; Adversarial Reasoning
+        </h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            Coming Soon!
+            Describe how core AI techniques such as search and adversarial
+            reasoning are used to model intelligent behavior.
+        </p>
+    </div>
+
+    <!-- Objective 04 -->
+    <div id="machine-learning" style="
+        margin-bottom: 30px;
+        padding: 25px;
+        border-left: 5px solid #333333;
+        scroll-margin-top: 100px;
+    ">
+        <h3 style="font-size: 24px; margin-bottom: 10px;">
+            04 — Machine Learning Approaches
+        </h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            Coming soon!
+            Explain fundamental machine learning approaches and distinguish
+            between major learning paradigms.
+        </p>
+    </div>
+
+    <!-- Objective 05 -->
+    <div id="generative-ai" style="
+        margin-bottom: 10px;
+        padding: 25px;
+        border-left: 5px solid #333333;
+        scroll-margin-top: 100px;
+    ">
+        <h3 style="font-size: 24px; margin-bottom: 10px;">
+            05 — Generative AI &amp; LLMs
+        </h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            Coming Soon!
+            Describe how generative AI and large language models operate
+            conceptually and evaluate their appropriate use.
+        </p>
+    </div>
+
+</section>
+
+
+
+<section id="credits">
+
+    <h2>Credits</h2>
+
+    <h3>Tool &amp; Version</h3>
+    <p>ChatGPT — GPT-5.6 Luna</p>
+
+    <h3>Date(s) of Use</h3>
+    <p>September 23, 2026</p>
+
+    <h3>Purpose</h3>
+    <p>Trying to create a portfolio website.</p>
+
+    <h3>AI's Contribution</h3>
+    <p>The AI generated code for the website.</p>
+
+    <h3>Human Contributions</h3>
+    <p>
+        Alina selected the proper code, checked that it appeared correctly
+        on screen, and compiled the code into one website.
+    </p>
+
+    <h3>Conversation Transcript</h3>
+
+    <p>
+        <a href="AI-Transcript-for-Website.pdf" target="_blank">
+            View the PDF transcript of this conversation
+        </a>
+    </p>
+
+</section>
+
+<!-- AI Collaboration Credit #2 -->
+<div style="
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #dddddd;
+">
+
+    <h2 style="text-align: center; font-size: 30px;">
+        AI Collaboration Credit — ChatGPT
+    </h2>
+
+    <h3>Tool &amp; Version</h3>
+    <p>ChatGPT — GPT-5.6 Luna</p>
+
+    <h3>Date of Use</h3>
+    <p>September 24, 2026</p>
+
+    <h3>When Collaboration Happened</h3>
+    <p>September 24, 2026</p>
+
+    <h3>Purpose</h3>
+    <p>
+        Refine and delete certain sections that were double such as the
+        credits section and course objectives.
+    </p>
+
+    <h3>AI Contribution</h3>
+    <p>
+        Producing the code for the fixes and adding the citations.
+    </p>
+
+    <h3>Human Contribution</h3>
+    <p>
+        Embedding the code and selecting the properly working code.
+    </p>
+
+    <h3>Conversation Transcript</h3>
+    <p>
+        <a
+            href="AI-Transcript-2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View the PDF transcript of this conversation
+        </a>
+    </p>
+
+</div>
+<!-- AI Collaboration Credit #3 -->
+<div style="
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #dddddd;
+">
+
+    <h2 style="text-align: center; font-size: 30px;">
+        AI Collaboration Credit — ChatGPT
+    </h2>
+
+    <h3>Tool &amp; Version</h3>
+    <p>ChatGPT — GPT-5.6 Luna</p>
+
+    <h3>Date of Use</h3>
+    <p>September 27, 2026</p>
+
+    <h3>When Collaboration Happened</h3>
+    <p>September 27, 2026</p>
+
+    <h3>Purpose</h3>
+    <p>
+        Refine the "All About Me" section and adding top links to the menu. 
+    </p>
+
+    <h3>AI Contribution</h3>
+    <p>
+        Producing the code for the fixes and adding the citations.
+    </p>
+
+    <h3>Human Contribution</h3>
+    <p>
+        Embedding the code and selecting the properly working code.
+    </p>
+
+    <h3>Conversation Transcript</h3>
+    <p>
+        <a
+            href="AI-Transcript-3.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View the PDF transcript of this conversation
+        </a>
+    </p>
+
+</div>
