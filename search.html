@@ -13,28 +13,77 @@
 
     <header>
         <h1>Search &amp; Adversarial Reasoning</h1>
-        <p>How AI explores possibilities and makes decisions.</p>
+        <p>Describe how core AI techniques such as search and adversarial reasoning are used to model intelligent behavior.</p>
     </header>
 
     <nav>
         <a href="index.html">All About Me</a>
-        <a href="history.html">History of AI &amp; ML</a>
-        <a href="ethics.html">Ethics &amp; Society</a>
-        <a href="search.html">Search &amp; Adversarial Reasoning</a>
-        <a href="machine-learning.html">Machine Learning Approaches</a>
-        <a href="generative-ai.html">Generative AI &amp; LLMs</a>
+        <a href="history.html">History </a>
+        <a href="ethics.html">Ethics</a>
+        <a href="search.html">Search</a>
+        <a href="machine-learning.html"> Approaches</a>
+        <a href="generative-ai.html">Generative </a>
         <a href="credits.html">Credits</a>
     </nav>
 
     <main>
-        <section>
-            <h2>03 — Search &amp; Adversarial Reasoning</h2>
-            <p>
-                Coming Soon! Learn how AI systems search through possible
-                solutions, plan actions, and make decisions when competing
-                against another player or system.
-            </p>
-        </section>
+        
+<section>
+    <h2><strong>Problem Solving/Search</strong></h2>
+
+    <p>
+        In a search problem, there are several ways to handle the task at hand. There is DFS, where the algorithm goes all the way down the branch of the decision tree and turns back when a dead end is reached. BFS is the algorithm that searches layer by layer on the decision tree of each node until the end goal is reached. A* is the optimal pathfinding algorithm that finds the path that is shortest and most cost-effective.
+    </p>
+</section>
+
+<section>
+    <h2><strong>DFS</strong></h2>
+
+    <p>
+        A real-world application of DFS is web crawling. In the article “An Efficient Approach for Web Indexing of Big Data through Hyperlinks in Web Crawling” by R. Suganya Devi, D. Manjula, and R. K. Siddharth, the researchers discuss how they developed a web crawler that can start at a specific page and follow hyperlinks to discover other pages and where they lead. The web crawler operates using DFS in that it starts in the initial state, which is the homepage. From the homepage, the intelligent agent goes down the search tree and explores each node, with each node representing a webpage. The web crawler fulfills the search problem of collecting information by exploring webpages. The web crawler does this by utilizing the search strategy of exploring one branch of the search tree as deeply as possible before backtracking to its most recent unexplored page.
+    </p>
+
+    <p>
+        For a hypothetical example, the web crawler could move from homepage A to page B, then go to page C, and then to page E before backtracking to the most recent webpage with unexplored links. The expansion order for that example would be A → B → C → E → D. As the web crawler explores webpages, its actions involve following hyperlinks to other pages as it collects information from each node. As the intelligent agent moves, it evaluates the information and explores the pages until it cannot proceed any further. The web crawler utilizes its goal test to determine whether it has completed its task of exploring all reachable webpages and links within its capabilities. This type of model can theoretically be used to support search engines by gathering information on a certain topic. For example, if a user searches “Why is the sky blue?”, a search engine can use the information collected by the web crawler and organize it for users. The web crawler would simply compile information that could be used to answer the user's question, and the search engine would present it in a reasonable format.
+    </p>
+</section>
+
+<section>
+    <h2><strong>BFS</strong></h2>
+
+    <p>
+        Sarah recently took a DNA test with her friend Nancy. Their results showed that they shared a common ancestor, and they became curious about how far back that ancestor lived. The girls constructed a model of their family trees to determine which common ancestor they shared. They utilized Breadth-First Search (BFS) for their project to evaluate Sarah's lineage generation by generation until they discovered how many generations ago their common ancestor existed.
+    </p>
+
+    <p>
+        The girls used Breadth-First Search by mapping their ancestors generation by generation. BFS explores each generation before moving to the next level. In this case, BFS is solving the search problem of determining how many generations separate Sarah and Nancy from their common ancestor. Each action moves from a person to their parent and then onto the next ancestor within the search tree. The search begins with the initial state, where both Sarah and Nancy are at generation 0. From there, BFS explores their parents (generation 1), grandparents (generation 2), great-grandparents (generation 3), and great-great-grandparents (generation 4).
+    </p>
+
+    <p>
+        BFS explores the family trees layer by layer until it either finds a solution or can no longer continue. As it traverses the search tree, each ancestor node is marked as visited to prevent repeated exploration. The algorithm continues searching through successive generations until it successfully identifies a common ancestor. The goal test for this BFS problem is to find an ancestor who appears in both Sarah's and Nancy's family trees.
+    </p>
+
+    <p>
+        Let's say the girls find that they have a common great-grandparent, Scott. The BFS algorithm would start by analyzing Sarah's and Nancy's family trees, generation by generation, looking for an individual called Scott. The BFS algorithm would keep track of each node it visited in a generation. When BFS finds Scott in the third generation of both Sarah's and Nancy's trees, it will stop, as it has completed its goal of finding the ancestor and determining how many generations apart Sarah and Nancy are.
+    </p>
+</section>
+
+<section>
+    <h2><strong>Adversarial Search</strong></h2>
+
+    <p>
+        Adversarial search is a decision-making framework used when there are multiple AI agents who have conflicting goals. This kind of model is often seen in games where two opponent agents have to predict the other's move and how to outmaneuver them.
+    </p>
+
+    <p>
+        What this entails for the agents is that the initial states for both agents are the starting points, and the actions are the legal moves each AI agent can make. As the agent plays throughout the game, it will assign values to the terminal states of win, loss, or draw until the game is finished. How adversarial search works is that, in a typical two-player game, the Max node represents the AI's turn and tries to maximize its score, while a Min node represents the opponent's turn and tries to minimize the score. A common algorithm used for this model is alpha-beta pruning. Alpha-beta pruning utilizes a game tree, evaluating each branch to choose the move that maximizes the AI's outcome. Alpha-beta pruning is an optimization of Minimax that skips branches that don't matter to the final decision.
+    </p>
+
+    <p>
+        Example of this … To be seen later.
+    </p>
+</section>
+
     </main>
 
     <footer>
