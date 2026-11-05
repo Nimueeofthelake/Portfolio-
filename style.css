@@ -201,3 +201,33 @@ footer p {
     }
 }
 ```
+/* Approaches Page - Consistent Card Spacing */
+.approaches-container section,
+main.approaches-container > section {
+    padding: 40px 45px;
+    margin-bottom: 35px;
+}
+
+/* Consistent heading spacing */
+.approaches-container section h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Consistent paragraph spacing */
+.approaches-container section p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.approaches-container section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile spacing */
+@media (max-width: 700px) {
+    .approaches-container section,
+    main.approaches-container > section {
+        padding: 25px;
+    }
+}
