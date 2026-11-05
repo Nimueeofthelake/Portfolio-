@@ -43,8 +43,22 @@
         Q(s,a) = Q(s,a) + [r + α max Q(s',a') - Q(s,a)]
     </p>
 
+
+        <h2><strong>Evidence</strong></h2>
+
     <p>
-        Further elaborate with an example. Or add more later. Or explain equation later.
+        A simple example of reinforcement learning can be seen in self-driving cars. Learning how to drive is a major application of reinforcement learning, as it allows autonomous vehicles to improve the safety and efficiency of their driving. The main way a self-learning agent learns is through observations of its surrounding environment. In this case, the car's state is represented by information gathered through its cameras and sensors, which capture details about the current environment. From there, the car selects an action based on its current policy, such as steering or accelerating. Based on the outcomes of these actions, the car receives positive or negative feedback in the form of rewards. Positive rewards may be given for staying in the lane and avoiding collisions, while negative rewards may result from near misses or actions that violate traffic safety rules.
+    </p>
+
+    <p>
+        A real-world example can be found in the article "Learning to Drive in a Day" by Alex Kendall et al., which discusses the reinforcement learning process used in Wayve's autonomous vehicle. The agent uses camera images, vehicle speed, and steering information to navigate its environment.
+    </p>
+
+    <p>
+        The agent takes actions by adjusting the steering angle and speed set point. The reward function is based on GPS tracking error and information received by the agent, including forward speed. An episode is also terminated when the vehicle fails to comply with traffic laws. The policy used by the autonomous driving car is the strategy it follows to steer and control its speed while staying within the lane. The policy for this agent was developed using Deep Deterministic Policy Gradient (DDPG).
+    </p>
+</section>
+```
     </p>
 </section>
 
