@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +11,12 @@
 </head>
 
 <body>
+
+    <!-- Main Banner -->
+    <header>
+        <h1>Machine Learning Approaches</h1>
+        <p>Explain fundamental machine learning approaches and distinguish between major learning paradigms.</p>
+    </header>
 
     <!-- Navigation -->
     <nav>
@@ -26,18 +33,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header>
-        <h1>Machine Learning Approaches</h1>
-        <p>Explain fundamental machine learning approaches and distinguish between major learning paradigms.</p>
-    </header>
-
     <!-- Main Content -->
     <main class="approaches-container">
 
         <!-- Reinforcement Learning -->
-        <section>
-            <h2><strong>Reinforcement Learning</strong></h2>
+        <section class="approach-card">
+            <h2>Reinforcement Learning</h2>
 
             <p>
                 Reinforcement learning is primarily used when the surrounding environment is changing or the agent is learning through trial and error. The agent primarily learns by interacting with the environment. The agent is the main decision maker in this system. The environment is the main thing the agent interacts with. The current situation of the agent is represented by the initial state. From that state, the agent will decide its actions, which causes the environment to become a new state. The outcome of the actions will affect the reward the agent receives. The reward can be positive, negative, or neutral. After many trial-and-error interactions with the environment, the actions can determine a policy for the agent to follow.
@@ -50,41 +51,41 @@
             <p>
                 Q(s,a) = Q(s,a) + [r + α max Q(s',a') - Q(s,a)]
             </p>
+
+            <p>
+                Further elaborate with an example. Or add more later. Or explain equation later.
+            </p>
         </section>
 
         <!-- Evidence -->
-        <section>
-            <h2><strong>Evidence</strong></h2>
+        <section class="approach-card">
+            <h2>Evidence</h2>
 
             <p>
-                A simple example of reinforcement learning can be seen in self-driving cars. Learning how to drive is a major application of reinforcement learning, as it allows autonomous vehicles to improve the safety and efficiency of their driving. The main way a self-learning agent learns is through observations of its surrounding environment. In this case, the car's state is represented by information gathered through its cameras and sensors, which capture details about the current environment. From there, the car selects an action based on its current policy, such as steering or accelerating. Based on the outcomes of these actions, the car receives positive or negative feedback in the form of rewards. Positive rewards may be given for staying in the lane and avoiding collisions, while negative rewards may result from near misses or actions that violate traffic safety rules.
+                A simple example where reinforcement learning would be present is in self-driving cars. The learning-to-drive strategies would be the main aspect of where reinforcement learning is present to improve the safety and efficiency of driving. The main way a self-learning agent learns is that the car's state is the observation of the surrounding area via its cameras and sensors to capture information about the current environment. From there, the car can select the action it can take based on the car's current policy, such as steering or acceleration. Based on the outcome of these actions, the car will receive a positive or negative feedback reward for staying in the lane, avoiding collisions, or a negative reward for a near miss or a move that breaks traffic safety.
             </p>
 
             <p>
-                A real-world example can be found in the article "Learning to Drive in a Day" by Alex Kendall et al., which discusses the reinforcement learning process used in Wayve's autonomous vehicle. The agent uses camera images, vehicle speed, and steering information to navigate its environment.
+                Such an example can be seen in the "Learning to Drive in a Day" article by Alex Kendall et al., in the processes of the reinforcement learning of the Wayve self-driving car. The agent uses camera images, vehicle speed, and steering information to navigate the environment.
             </p>
 
             <p>
-                The agent takes actions by adjusting the steering angle and speed set point. The reward function is based on GPS tracking error and information received by the agent, including forward speed. An episode is also terminated when the vehicle fails to comply with traffic laws. The policy used by the autonomous driving car is the strategy it follows to steer and control its speed while staying within the lane. The policy for this agent was developed using Deep Deterministic Policy Gradient (DDPG).
+                The agent can take actions by adjusting the steering angle and speed set point. The reward function for this agent is based on the GPS tracking error and the information the agent receives, including forward speed, as well as an episode terminated when the vehicle does not comply with traffic laws. The policy that the autonomous driving car utilizes is the strategy it uses to steer and control its speed while staying within the lane. The policy for this agent was developed using Deep Deterministic Policy Gradient (DDPG).
             </p>
         </section>
 
         <!-- Supervised Learning -->
-        <section>
-            <h2><strong>Supervised Learning</strong></h2>
+        <section class="approach-card">
+            <h2>Supervised Learning</h2>
 
-            <p>
-                Coming soon!
-            </p>
+            <p>Coming soon!</p>
         </section>
 
         <!-- Unsupervised Learning -->
-        <section>
-            <h2><strong>Unsupervised Learning</strong></h2>
+        <section class="approach-card">
+            <h2>Unsupervised Learning</h2>
 
-            <p>
-                Coming soon!
-            </p>
+            <p>Coming soon!</p>
         </section>
 
     </main>
@@ -96,6 +97,3 @@
 
 </body>
 </html>
-```
-
-  
